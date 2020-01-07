@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		BE0FB93D23C4A71600ADB2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0FB93C23C4A71600ADB2DE /* Assets.xcassets */; };
 		BE0FB94023C4A71600ADB2DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0FB93E23C4A71600ADB2DE /* LaunchScreen.storyboard */; };
 		BE0FB94B23C4A71600ADB2DE /* morionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FB94A23C4A71600ADB2DE /* morionTests.swift */; };
+		BE17C61423C4AB440009496F /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61023C4AB440009496F /* RootRouter.swift */; };
+		BE17C61523C4AB440009496F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61123C4AB440009496F /* RootViewController.swift */; };
+		BE17C61623C4AB440009496F /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61223C4AB440009496F /* RootBuilder.swift */; };
+		BE17C61723C4AB440009496F /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61323C4AB440009496F /* RootInteractor.swift */; };
+		BE17C61A23C4AB8A0009496F /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61923C4AB8A0009496F /* ApplicationController.swift */; };
 		ED05C9ABE8229BDAFC23FBF6 /* Pods_morion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD93F79EA9B07620CADF491 /* Pods_morion.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +46,11 @@
 		BE0FB94623C4A71600ADB2DE /* morionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = morionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0FB94A23C4A71600ADB2DE /* morionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = morionTests.swift; sourceTree = "<group>"; };
 		BE0FB94C23C4A71600ADB2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE17C61023C4AB440009496F /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		BE17C61123C4AB440009496F /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		BE17C61223C4AB440009496F /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		BE17C61323C4AB440009496F /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		BE17C61923C4AB8A0009496F /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
 		DBA962B4743D22080055DC96 /* Pods-morionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-morionTests.debug.xcconfig"; path = "Target Support Files/Pods-morionTests/Pods-morionTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +82,6 @@
 				DBA962B4743D22080055DC96 /* Pods-morionTests.debug.xcconfig */,
 				2C9576673E11E4FA197E945A /* Pods-morionTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -99,6 +108,8 @@
 		BE0FB93223C4A71400ADB2DE /* morion */ = {
 			isa = PBXGroup;
 			children = (
+				BE17C61823C4AB7A0009496F /* Controller */,
+				BE17C60F23C4AB290009496F /* Root */,
 				BE0FB95623C4A73700ADB2DE /* AppStart */,
 				BE0FB93C23C4A71600ADB2DE /* Assets.xcassets */,
 				BE0FB93E23C4A71600ADB2DE /* LaunchScreen.storyboard */,
@@ -123,6 +134,25 @@
 				BE0FB93523C4A71400ADB2DE /* SceneDelegate.swift */,
 			);
 			path = AppStart;
+			sourceTree = "<group>";
+		};
+		BE17C60F23C4AB290009496F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				BE17C61023C4AB440009496F /* RootRouter.swift */,
+				BE17C61123C4AB440009496F /* RootViewController.swift */,
+				BE17C61223C4AB440009496F /* RootBuilder.swift */,
+				BE17C61323C4AB440009496F /* RootInteractor.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		BE17C61823C4AB7A0009496F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE17C61923C4AB8A0009496F /* ApplicationController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E3B9C1787F6C105DFE3363BF /* Frameworks */ = {
@@ -301,7 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE17C61723C4AB440009496F /* RootInteractor.swift in Sources */,
 				BE0FB93423C4A71400ADB2DE /* AppDelegate.swift in Sources */,
+				BE17C61A23C4AB8A0009496F /* ApplicationController.swift in Sources */,
+				BE17C61423C4AB440009496F /* RootRouter.swift in Sources */,
+				BE17C61623C4AB440009496F /* RootBuilder.swift in Sources */,
+				BE17C61523C4AB440009496F /* RootViewController.swift in Sources */,
 				BE0FB93623C4A71400ADB2DE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

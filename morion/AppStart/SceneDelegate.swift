@@ -11,18 +11,18 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var router: RootRouting!
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let scene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: scene)
-        window.makeKeyAndVisible()
         self.window = window
         
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .red
-        window.rootViewController = viewController
+        let builder = RootBuilder(dependency: ApplicationController())
+        router = builder.build()
+        router.launchFromWindow(window)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
