@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FD8866DEB84A28E4193CF05 /* Pods_morionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD30641C1E9F8DB0EE69B7A /* Pods_morionTests.framework */; };
 		BE0FB93423C4A71400ADB2DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FB93323C4A71400ADB2DE /* AppDelegate.swift */; };
 		BE0FB93623C4A71400ADB2DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FB93523C4A71400ADB2DE /* SceneDelegate.swift */; };
 		BE0FB93D23C4A71600ADB2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0FB93C23C4A71600ADB2DE /* Assets.xcassets */; };
 		BE0FB94023C4A71600ADB2DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0FB93E23C4A71600ADB2DE /* LaunchScreen.storyboard */; };
 		BE0FB94B23C4A71600ADB2DE /* morionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FB94A23C4A71600ADB2DE /* morionTests.swift */; };
+		ED05C9ABE8229BDAFC23FBF6 /* Pods_morion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD93F79EA9B07620CADF491 /* Pods_morion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FD30641C1E9F8DB0EE69B7A /* Pods_morionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_morionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD93F79EA9B07620CADF491 /* Pods_morion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_morion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9576673E11E4FA197E945A /* Pods-morionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-morionTests.release.xcconfig"; path = "Target Support Files/Pods-morionTests/Pods-morionTests.release.xcconfig"; sourceTree = "<group>"; };
+		34E96E7B3BBF16D6D1EB1FBC /* Pods-morion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-morion.release.xcconfig"; path = "Target Support Files/Pods-morion/Pods-morion.release.xcconfig"; sourceTree = "<group>"; };
+		90963B1FEA9BACEBA49BF4D7 /* Pods-morion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-morion.debug.xcconfig"; path = "Target Support Files/Pods-morion/Pods-morion.debug.xcconfig"; sourceTree = "<group>"; };
 		BE0FB93023C4A71400ADB2DE /* morion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = morion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0FB93323C4A71400ADB2DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE0FB93523C4A71400ADB2DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +41,7 @@
 		BE0FB94623C4A71600ADB2DE /* morionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = morionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0FB94A23C4A71600ADB2DE /* morionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = morionTests.swift; sourceTree = "<group>"; };
 		BE0FB94C23C4A71600ADB2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA962B4743D22080055DC96 /* Pods-morionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-morionTests.debug.xcconfig"; path = "Target Support Files/Pods-morionTests/Pods-morionTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED05C9ABE8229BDAFC23FBF6 /* Pods_morion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,18 +57,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD8866DEB84A28E4193CF05 /* Pods_morionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		271EC9C3779A07E81478E89C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90963B1FEA9BACEBA49BF4D7 /* Pods-morion.debug.xcconfig */,
+				34E96E7B3BBF16D6D1EB1FBC /* Pods-morion.release.xcconfig */,
+				DBA962B4743D22080055DC96 /* Pods-morionTests.debug.xcconfig */,
+				2C9576673E11E4FA197E945A /* Pods-morionTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BE0FB92723C4A71400ADB2DE = {
 			isa = PBXGroup;
 			children = (
 				BE0FB93223C4A71400ADB2DE /* morion */,
 				BE0FB94923C4A71600ADB2DE /* morionTests */,
 				BE0FB93123C4A71400ADB2DE /* Products */,
+				271EC9C3779A07E81478E89C /* Pods */,
+				E3B9C1787F6C105DFE3363BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +125,15 @@
 			path = AppStart;
 			sourceTree = "<group>";
 		};
+		E3B9C1787F6C105DFE3363BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FD93F79EA9B07620CADF491 /* Pods_morion.framework */,
+				0FD30641C1E9F8DB0EE69B7A /* Pods_morionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE0FB94F23C4A71600ADB2DE /* Build configuration list for PBXNativeTarget "morion" */;
 			buildPhases = (
+				84AE87128C3AD0CA436CA7EE /* [CP] Check Pods Manifest.lock */,
 				BE0FB92C23C4A71400ADB2DE /* Sources */,
 				BE0FB92D23C4A71400ADB2DE /* Frameworks */,
 				BE0FB92E23C4A71400ADB2DE /* Resources */,
+				88F4A1EE65FDAA195F34ABA6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE0FB95223C4A71600ADB2DE /* Build configuration list for PBXNativeTarget "morionTests" */;
 			buildPhases = (
+				04FC423361DE480C2FB1E513 /* [CP] Check Pods Manifest.lock */,
 				BE0FB94223C4A71600ADB2DE /* Sources */,
 				BE0FB94323C4A71600ADB2DE /* Frameworks */,
 				BE0FB94423C4A71600ADB2DE /* Resources */,
@@ -195,6 +231,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04FC423361DE480C2FB1E513 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-morionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84AE87128C3AD0CA436CA7EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-morion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88F4A1EE65FDAA195F34ABA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-morion/Pods-morion-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-morion/Pods-morion-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-morion/Pods-morion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE0FB92C23C4A71400ADB2DE /* Sources */ = {
@@ -352,6 +452,7 @@
 		};
 		BE0FB95023C4A71600ADB2DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90963B1FEA9BACEBA49BF4D7 /* Pods-morion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -369,6 +470,7 @@
 		};
 		BE0FB95123C4A71600ADB2DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34E96E7B3BBF16D6D1EB1FBC /* Pods-morion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -386,6 +488,7 @@
 		};
 		BE0FB95323C4A71600ADB2DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA962B4743D22080055DC96 /* Pods-morionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -407,6 +510,7 @@
 		};
 		BE0FB95423C4A71600ADB2DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9576673E11E4FA197E945A /* Pods-morionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
