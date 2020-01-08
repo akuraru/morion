@@ -11,26 +11,22 @@ import RxSwift
 import UIKit
 
 protocol LoggedOutPresentableListener: class {
-    // TODO: Declare properties and methods that the view controller can invoke to perform
-    // business logic, such as signIn(). This protocol is implemented by the corresponding
-    // interactor class.
 }
 
 final class LoggedOutViewController: UIViewController, LoggedOutPresentable, LoggedOutViewControllable {
     weak var listener: LoggedOutPresentableListener?
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
-        modalPresentationStyle = .fullScreen
+    func instantiate() -> LoggedOutViewController {
+        let storyboard = UIStoryboard(name: "LoggedOutViewController", bundle: nil)
+        guard let viewController = storyboard.instantiateInitialViewController() as? LoggedOutViewController else { fatalError() }
+        viewController.modalPresentationStyle = .fullScreen
+        return viewController
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    @IBOutlet weak var tokenField: UITextField!
+    @IBOutlet weak var okButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .blue
     }
 }

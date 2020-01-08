@@ -25,6 +25,7 @@
 		BE17C62923C577850009496F /* RootRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C62723C577850009496F /* RootRouterTests.swift */; };
 		BE17C62D23C577B90009496F /* LoggedOutInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C62B23C577B90009496F /* LoggedOutInteractorTests.swift */; };
 		BE17C62E23C577B90009496F /* LoggedOutRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C62C23C577B90009496F /* LoggedOutRouterTests.swift */; };
+		BE17C63D23C60ACB0009496F /* LoggedOutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE17C63C23C60ACB0009496F /* LoggedOutViewController.storyboard */; };
 		ED05C9ABE8229BDAFC23FBF6 /* Pods_morion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD93F79EA9B07620CADF491 /* Pods_morion.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		BE17C62723C577850009496F /* RootRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouterTests.swift; sourceTree = "<group>"; };
 		BE17C62B23C577B90009496F /* LoggedOutInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractorTests.swift; sourceTree = "<group>"; };
 		BE17C62C23C577B90009496F /* LoggedOutRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouterTests.swift; sourceTree = "<group>"; };
+		BE17C63C23C60ACB0009496F /* LoggedOutViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggedOutViewController.storyboard; sourceTree = "<group>"; };
 		DBA962B4743D22080055DC96 /* Pods-morionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-morionTests.debug.xcconfig"; path = "Target Support Files/Pods-morionTests/Pods-morionTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +178,7 @@
 			children = (
 				BE17C61C23C4BC4F0009496F /* LoggedOutRouter.swift */,
 				BE17C61D23C4BC4F0009496F /* LoggedOutViewController.swift */,
+				BE17C63C23C60ACB0009496F /* LoggedOutViewController.storyboard */,
 				BE17C61E23C4BC4F0009496F /* LoggedOutBuilder.swift */,
 				BE17C61F23C4BC4F0009496F /* LoggedOutInteractor.swift */,
 			);
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE0FB94023C4A71600ADB2DE /* LaunchScreen.storyboard in Resources */,
+				BE17C63D23C60ACB0009496F /* LoggedOutViewController.storyboard in Resources */,
 				BE0FB93D23C4A71600ADB2DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
