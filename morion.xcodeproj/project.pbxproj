@@ -12,12 +12,19 @@
 		BE0FB93623C4A71400ADB2DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FB93523C4A71400ADB2DE /* SceneDelegate.swift */; };
 		BE0FB93D23C4A71600ADB2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0FB93C23C4A71600ADB2DE /* Assets.xcassets */; };
 		BE0FB94023C4A71600ADB2DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0FB93E23C4A71600ADB2DE /* LaunchScreen.storyboard */; };
-		BE0FB94B23C4A71600ADB2DE /* morionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FB94A23C4A71600ADB2DE /* morionTests.swift */; };
 		BE17C61423C4AB440009496F /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61023C4AB440009496F /* RootRouter.swift */; };
 		BE17C61523C4AB440009496F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61123C4AB440009496F /* RootViewController.swift */; };
 		BE17C61623C4AB440009496F /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61223C4AB440009496F /* RootBuilder.swift */; };
 		BE17C61723C4AB440009496F /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61323C4AB440009496F /* RootInteractor.swift */; };
 		BE17C61A23C4AB8A0009496F /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61923C4AB8A0009496F /* ApplicationController.swift */; };
+		BE17C62023C4BC4F0009496F /* LoggedOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61C23C4BC4F0009496F /* LoggedOutRouter.swift */; };
+		BE17C62123C4BC4F0009496F /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61D23C4BC4F0009496F /* LoggedOutViewController.swift */; };
+		BE17C62223C4BC4F0009496F /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61E23C4BC4F0009496F /* LoggedOutBuilder.swift */; };
+		BE17C62323C4BC4F0009496F /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C61F23C4BC4F0009496F /* LoggedOutInteractor.swift */; };
+		BE17C62823C577850009496F /* RootInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C62623C577850009496F /* RootInteractorTests.swift */; };
+		BE17C62923C577850009496F /* RootRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C62723C577850009496F /* RootRouterTests.swift */; };
+		BE17C62D23C577B90009496F /* LoggedOutInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C62B23C577B90009496F /* LoggedOutInteractorTests.swift */; };
+		BE17C62E23C577B90009496F /* LoggedOutRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C62C23C577B90009496F /* LoggedOutRouterTests.swift */; };
 		ED05C9ABE8229BDAFC23FBF6 /* Pods_morion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD93F79EA9B07620CADF491 /* Pods_morion.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,13 +51,20 @@
 		BE0FB93F23C4A71600ADB2DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE0FB94123C4A71600ADB2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE0FB94623C4A71600ADB2DE /* morionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = morionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE0FB94A23C4A71600ADB2DE /* morionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = morionTests.swift; sourceTree = "<group>"; };
 		BE0FB94C23C4A71600ADB2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE17C61023C4AB440009496F /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		BE17C61123C4AB440009496F /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		BE17C61223C4AB440009496F /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
 		BE17C61323C4AB440009496F /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		BE17C61923C4AB8A0009496F /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
+		BE17C61C23C4BC4F0009496F /* LoggedOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouter.swift; sourceTree = "<group>"; };
+		BE17C61D23C4BC4F0009496F /* LoggedOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
+		BE17C61E23C4BC4F0009496F /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
+		BE17C61F23C4BC4F0009496F /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
+		BE17C62623C577850009496F /* RootInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractorTests.swift; sourceTree = "<group>"; };
+		BE17C62723C577850009496F /* RootRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouterTests.swift; sourceTree = "<group>"; };
+		BE17C62B23C577B90009496F /* LoggedOutInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractorTests.swift; sourceTree = "<group>"; };
+		BE17C62C23C577B90009496F /* LoggedOutRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouterTests.swift; sourceTree = "<group>"; };
 		DBA962B4743D22080055DC96 /* Pods-morionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-morionTests.debug.xcconfig"; path = "Target Support Files/Pods-morionTests/Pods-morionTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +124,7 @@
 			children = (
 				BE17C61823C4AB7A0009496F /* Controller */,
 				BE17C60F23C4AB290009496F /* Root */,
+				BE17C61B23C4BC360009496F /* LoggedOut */,
 				BE0FB95623C4A73700ADB2DE /* AppStart */,
 				BE0FB93C23C4A71600ADB2DE /* Assets.xcassets */,
 				BE0FB93E23C4A71600ADB2DE /* LaunchScreen.storyboard */,
@@ -121,7 +136,8 @@
 		BE0FB94923C4A71600ADB2DE /* morionTests */ = {
 			isa = PBXGroup;
 			children = (
-				BE0FB94A23C4A71600ADB2DE /* morionTests.swift */,
+				BE17C62A23C577A40009496F /* LoggedOut */,
+				BE17C62523C577710009496F /* Root */,
 				BE0FB94C23C4A71600ADB2DE /* Info.plist */,
 			);
 			path = morionTests;
@@ -153,6 +169,35 @@
 				BE17C61923C4AB8A0009496F /* ApplicationController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		BE17C61B23C4BC360009496F /* LoggedOut */ = {
+			isa = PBXGroup;
+			children = (
+				BE17C61C23C4BC4F0009496F /* LoggedOutRouter.swift */,
+				BE17C61D23C4BC4F0009496F /* LoggedOutViewController.swift */,
+				BE17C61E23C4BC4F0009496F /* LoggedOutBuilder.swift */,
+				BE17C61F23C4BC4F0009496F /* LoggedOutInteractor.swift */,
+			);
+			path = LoggedOut;
+			sourceTree = "<group>";
+		};
+		BE17C62523C577710009496F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				BE17C62623C577850009496F /* RootInteractorTests.swift */,
+				BE17C62723C577850009496F /* RootRouterTests.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		BE17C62A23C577A40009496F /* LoggedOut */ = {
+			isa = PBXGroup;
+			children = (
+				BE17C62B23C577B90009496F /* LoggedOutInteractorTests.swift */,
+				BE17C62C23C577B90009496F /* LoggedOutRouterTests.swift */,
+			);
+			path = LoggedOut;
 			sourceTree = "<group>";
 		};
 		E3B9C1787F6C105DFE3363BF /* Frameworks */ = {
@@ -331,12 +376,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE17C62323C4BC4F0009496F /* LoggedOutInteractor.swift in Sources */,
 				BE17C61723C4AB440009496F /* RootInteractor.swift in Sources */,
 				BE0FB93423C4A71400ADB2DE /* AppDelegate.swift in Sources */,
+				BE17C62223C4BC4F0009496F /* LoggedOutBuilder.swift in Sources */,
 				BE17C61A23C4AB8A0009496F /* ApplicationController.swift in Sources */,
+				BE17C62023C4BC4F0009496F /* LoggedOutRouter.swift in Sources */,
 				BE17C61423C4AB440009496F /* RootRouter.swift in Sources */,
 				BE17C61623C4AB440009496F /* RootBuilder.swift in Sources */,
 				BE17C61523C4AB440009496F /* RootViewController.swift in Sources */,
+				BE17C62123C4BC4F0009496F /* LoggedOutViewController.swift in Sources */,
 				BE0FB93623C4A71400ADB2DE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +394,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE0FB94B23C4A71600ADB2DE /* morionTests.swift in Sources */,
+				BE17C62923C577850009496F /* RootRouterTests.swift in Sources */,
+				BE17C62D23C577B90009496F /* LoggedOutInteractorTests.swift in Sources */,
+				BE17C62E23C577B90009496F /* LoggedOutRouterTests.swift in Sources */,
+				BE17C62823C577850009496F /* RootInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

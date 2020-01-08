@@ -25,4 +25,8 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
         
         view.backgroundColor = .red
     }
+    
+    func present(_ viewControllable: ViewControllable) {
+        present(viewControllable.uiviewController, animated: false, completion: nil)
+    }
 }
