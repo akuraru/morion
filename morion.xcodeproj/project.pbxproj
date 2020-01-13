@@ -27,6 +27,7 @@
 		BE17C62E23C577B90009496F /* LoggedOutRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17C62C23C577B90009496F /* LoggedOutRouterTests.swift */; };
 		BE17C63D23C60ACB0009496F /* LoggedOutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE17C63C23C60ACB0009496F /* LoggedOutViewController.storyboard */; };
 		BE8CD82423CC001F003751C5 /* StoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CD82323CC001F003751C5 /* StoreController.swift */; };
+		BE8CD82723CC0A4E003751C5 /* GithubAPIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CD82623CC0A4E003751C5 /* GithubAPIController.swift */; };
 		ED05C9ABE8229BDAFC23FBF6 /* Pods_morion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD93F79EA9B07620CADF491 /* Pods_morion.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		BE17C62C23C577B90009496F /* LoggedOutRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouterTests.swift; sourceTree = "<group>"; };
 		BE17C63C23C60ACB0009496F /* LoggedOutViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggedOutViewController.storyboard; sourceTree = "<group>"; };
 		BE8CD82323CC001F003751C5 /* StoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreController.swift; sourceTree = "<group>"; };
+		BE8CD82623CC0A4E003751C5 /* GithubAPIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIController.swift; sourceTree = "<group>"; };
 		DBA962B4743D22080055DC96 /* Pods-morionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-morionTests.debug.xcconfig"; path = "Target Support Files/Pods-morionTests/Pods-morionTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +174,7 @@
 			children = (
 				BE17C61923C4AB8A0009496F /* ApplicationController.swift */,
 				BE8CD82323CC001F003751C5 /* StoreController.swift */,
+				BE8CD82623CC0A4E003751C5 /* GithubAPIController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				BE8CD82423CC001F003751C5 /* StoreController.swift in Sources */,
 				BE17C61723C4AB440009496F /* RootInteractor.swift in Sources */,
 				BE0FB93423C4A71400ADB2DE /* AppDelegate.swift in Sources */,
+				BE8CD82723CC0A4E003751C5 /* GithubAPIController.swift in Sources */,
 				BE17C62223C4BC4F0009496F /* LoggedOutBuilder.swift in Sources */,
 				BE17C61A23C4AB8A0009496F /* ApplicationController.swift in Sources */,
 				BE17C62023C4BC4F0009496F /* LoggedOutRouter.swift in Sources */,

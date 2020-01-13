@@ -31,7 +31,7 @@ final class LoggedOutBuilder: Builder<LoggedOutDependency>, LoggedOutBuildable {
     func build(withListener listener: LoggedOutListener) -> LoggedOutRouting {
         let component = LoggedOutComponent(dependency: dependency)
         let viewController = LoggedOutViewController.instantiate()
-        let interactor = LoggedOutInteractor(presenter: viewController, storeController: component.application.store)
+        let interactor = LoggedOutInteractor(presenter: viewController, storeController: component.application.store, apiController: component.application.api)
         interactor.listener = listener
         return LoggedOutRouter(interactor: interactor, viewController: viewController)
     }
