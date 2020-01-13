@@ -18,6 +18,10 @@ protocol LoggedOutPresentable: Presentable {
     // TODO: Declare methods the interactor can invoke the presenter to present data.
 }
 
+protocol LoggedOutStoreController: class {
+    func set(token: String)
+}
+
 protocol LoggedOutListener: class {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
 }
@@ -25,9 +29,9 @@ protocol LoggedOutListener: class {
 final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, LoggedOutInteractable, LoggedOutPresentableListener {
     weak var router: LoggedOutRouting?
     weak var listener: LoggedOutListener?
-    weak var storeController: StoreController?
+    weak var storeController: LoggedOutStoreController?
 
-    init(presenter: LoggedOutPresentable, storeController: StoreController) {
+    init(presenter: LoggedOutPresentable, storeController: LoggedOutStoreController) {
         self.storeController = storeController
         super.init(presenter: presenter)
         presenter.listener = self
@@ -36,5 +40,6 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
     func login(token: String?) {
         guard let token = token else { return }
         
+        storeController?.set(token: token)
     }
 }

@@ -1,5 +1,11 @@
-protocol StoreController {
+import Foundation
+
+protocol StoreController: LoggedOutStoreController {
 }
 
-struct StoreControllerImp: StoreController {
+class StoreControllerImp: StoreController {
+    let tokenKey = "token"
+    func set(token: String) {
+        UserDefaults.standard.set(token, forKey: tokenKey)
+    }
 }
