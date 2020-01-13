@@ -23,24 +23,15 @@ protocol LoggedOutListener: class {
 }
 
 final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, LoggedOutInteractable, LoggedOutPresentableListener {
-
     weak var router: LoggedOutRouting?
     weak var listener: LoggedOutListener?
 
-    // TODO: Add additional dependencies to constructor. Do not perform any logic
-    // in constructor.
     override init(presenter: LoggedOutPresentable) {
         super.init(presenter: presenter)
         presenter.listener = self
     }
 
-    override func didBecomeActive() {
-        super.didBecomeActive()
-        // TODO: Implement business logic here.
-    }
-
-    override func willResignActive() {
-        super.willResignActive()
-        // TODO: Pause any business logic.
+    func login(token: String?) {
+        guard let _ = token else { return }
     }
 }
