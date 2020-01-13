@@ -25,13 +25,16 @@ protocol LoggedOutListener: class {
 final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, LoggedOutInteractable, LoggedOutPresentableListener {
     weak var router: LoggedOutRouting?
     weak var listener: LoggedOutListener?
+    weak var storeController: StoreController?
 
-    override init(presenter: LoggedOutPresentable) {
+    init(presenter: LoggedOutPresentable, storeController: StoreController) {
+        self.storeController = storeController
         super.init(presenter: presenter)
         presenter.listener = self
     }
 
     func login(token: String?) {
-        guard let _ = token else { return }
+        guard let token = token else { return }
+        
     }
 }

@@ -9,13 +9,11 @@
 import RIBs
 
 protocol LoggedOutDependency: Dependency {
-    // TODO: Declare the set of dependencies required by this RIB, but cannot be
-    // created by this RIB.
+    var application: ApplicationController { get }
 }
 
 final class LoggedOutComponent: Component<LoggedOutDependency> {
-
-    // TODO: Declare 'fileprivate' dependencies that are only used by this RIB.
+    var application: ApplicationController { dependency.application }
 }
 
 // MARK: - Builder
@@ -31,9 +29,9 @@ final class LoggedOutBuilder: Builder<LoggedOutDependency>, LoggedOutBuildable {
     }
 
     func build(withListener listener: LoggedOutListener) -> LoggedOutRouting {
-        _ = LoggedOutComponent(dependency: dependency)
+        let component = LoggedOutComponent(dependency: dependency)
         let viewController = LoggedOutViewController.instantiate()
-        let interactor = LoggedOutInteractor(presenter: viewController)
+        let interactor = LoggedOutInteractor(presenter: viewController, storeController: component.application.store)
         interactor.listener = listener
         return LoggedOutRouter(interactor: interactor, viewController: viewController)
     }

@@ -8,6 +8,10 @@
 
 import UIKit
 
+class ApplicationComponent: RootDependency {
+    var application: ApplicationController = ApplicationControllerImp()
+}
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -20,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: scene)
         self.window = window
         
-        let builder = RootBuilder(dependency: ApplicationController())
+        let builder = RootBuilder(dependency: ApplicationComponent())
         router = builder.build()
         router.launchFromWindow(window)
     }
